@@ -1,0 +1,11 @@
+# d = int(input())
+# anos = int(d/365)
+# meses = int(d/30) - int((365*anos)/30)
+# dias = d - (365*anos) - (30*meses)
+# print('{0} ano(s)\n{1} mes(es)\n{2} dia(s)\n'.format(anos,meses,dias))
+
+d = int(input())
+ano = int(d / 365)
+mes = int((d%365/30))
+dia = int(d%365%30)
+print('%d ano(s)\n%d mes(es)\n%d dia(s)' %(ano,mes,dia))
